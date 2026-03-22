@@ -1,0 +1,61 @@
+============================================================
+  CNN IMAGE CLASSIFICATION REPORT
+  Dataset: Fashion-MNIST
+============================================================
+
+── SIMPLE CNN ──
+  Test Accuracy   : 88.51%
+  Training Time   : 132.6 s
+  Parameters      : 357,706
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     T-shirt       0.78      0.90      0.84      1000
+     Trouser       0.99      0.98      0.98      1000
+    Pullover       0.76      0.91      0.83      1000
+       Dress       0.85      0.92      0.88      1000
+        Coat       0.87      0.70      0.78      1000
+      Sandal       0.98      0.96      0.97      1000
+       Shirt       0.76      0.59      0.67      1000
+     Sneaker       0.95      0.94      0.95      1000
+         Bag       0.97      0.98      0.98      1000
+  Ankle boot       0.94      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.88     10000
+weighted avg       0.89      0.89      0.88     10000
+
+============================================================
+── MobileNetV2 (Transfer Learning) ──
+  Test Accuracy   : 59.32%
+  Training Time   : 151.7 s
+  Parameters      : 2,270,794
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     T-shirt       0.65      0.43      0.51      1000
+     Trouser       0.74      0.90      0.81      1000
+    Pullover       0.57      0.43      0.49      1000
+       Dress       0.58      0.48      0.52      1000
+        Coat       0.32      0.66      0.43      1000
+      Sandal       0.70      0.71      0.71      1000
+       Shirt       0.36      0.20      0.25      1000
+     Sneaker       0.68      0.82      0.75      1000
+         Bag       0.72      0.55      0.62      1000
+  Ankle boot       0.78      0.74      0.76      1000
+
+    accuracy                           0.59     10000
+   macro avg       0.61      0.59      0.59     10000
+weighted avg       0.61      0.59      0.59     10000
+
+============================================================
+── COMPARISON SUMMARY ──
+  Metric                         Simple CNN  MobileNetV2 TL
+  -------------------------------------------------------
+  Test Accuracy (%)                   88.51           59.32
+  Training Time (s)                   132.6           151.7
+  Parameters (M)                       0.36            2.27
+
+============================================================
